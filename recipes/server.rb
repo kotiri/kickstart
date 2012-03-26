@@ -35,7 +35,7 @@ link "/srv/kickstart/index.html" do
   to "/srv/kickstart/ks.cfg"
 end
 
-template "#{node[:apache][:dir]}/sites-available/kickstart.conf" do
+template "#{node['apache']['dir']}/sites-available/kickstart.conf" do
   source "kickstart.conf.erb"
   variables(
     :virtual_host_name => node[:kickstart][:virtual_host_name],
