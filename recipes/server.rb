@@ -46,7 +46,7 @@ template "#{node['apache']['dir']}/sites-available/kickstart.conf" do
   group "root"
 end
 
-apache_site "kickstart.conf" do
+apache2_site "kickstart.conf" do
   enable true
 end
 
