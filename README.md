@@ -17,9 +17,9 @@ Red Hat Enterprise Linux, CentOS, or other platforms that support Kickstart :-).
 Attributes
 ==========
 
-* `kickstart[:rootpw]` - set the root password. Use an encrypted string[1].
-* `kickstart[:virtual_host_name]` - set the ServerName for apache2 vhost.
-* `kickstart[:mirror_url]` - set the full URL to the "CentOS" directory w/ the rpms to install.
+* `kickstart['rootpw']` - set the root password. Use an encrypted string[1].
+* `kickstart['virtual_host_name']` - set the ServerName for apache2 vhost.
+* `kickstart['mirror_url']` - set the full URL to the "CentOS" directory w/ the rpms to install.
 
 [Ruby way to encrypt](http://www.opensourcery.co.za/2009/05/01/quick-nix-shadow-passwords-with-ruby/)
 
